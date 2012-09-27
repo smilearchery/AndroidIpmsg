@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="380px"
+            android:layout_above="@+id/et_sendMsg"
+            android:layout_alignParentTop="true"
+            android:divider="#000000"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true" >
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/nulltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_sendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_sendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/et_sendMsg"
+            android:text="发送" />
+
+    </RelativeLayout>
+
+</LinearLayout>
